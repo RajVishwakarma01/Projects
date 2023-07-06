@@ -1,0 +1,14 @@
+SMAP
+regis_jsp.java
+JSP
+*S JSP
+*F
++ 0 regis.jsp
+regis.jsp
++ 1 mymenu1.jsp
+mymenu1.jsp
+*L
+1,5:49
+1#1,13:53
+5#0,35:66
+*E
