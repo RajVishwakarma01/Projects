@@ -1,0 +1,163 @@
+<style>
+    .screen {
+        height: 60px;
+        width: 390px;
+        font-size: 45;
+        color: red;
+        text-align: right
+    }
+    
+    .btn {
+        height: 50px;
+        width: 60px;
+        font-size: 30px;
+        color: red
+    }
+    
+    .btn2 {
+        font-size: 25px
+    }
+    
+    .btn:hover {
+        color: blue
+    }
+</style>
+
+<center>
+    <table border=1>
+
+        <tr>
+            <td colspan=6> <input class=screen id=t1>
+                <tr>
+                    <td><span id=s1> </span>
+
+                        <td><input type=button value=C class="btn btn2"  onclick=AllClear()  >
+                            <td><input type=button value=CE class="btn btn2" onclick=ce()>
+                                <td colspan=3><input type=button value=Backspace class="btn btn2" style=width:190px onclick=bkspace()>
+
+
+                                    <tr>
+                                        <td><input type=button value=MS class="btn btn2" onclick=ms()>
+                                            <td><input type=button value=7 class=btn onclick=digit(this)>
+                                                <td><input type=button value=8 class=btn onclick=digit(this)>
+                                                    <td><input type=button value=9 class=btn onclick=digit(this)>
+                                                        <td><input type=button value=/ class=btn onclick=opr(this)>
+                                                            <td><input type=button value=% class=btn onclick=per()>
+
+                                                                <tr>
+                                                                    <td><input type=button value=M+ class="btn btn2" onclick=mp()>
+                                                                        <td><input type=button value=4 class=btn onclick=digit(this)>
+                                                                            <td><input type=button value=5 class=btn onclick=digit(this)>
+                                                                                <td><input type=button value=6 class=btn onclick=digit(this)>
+                                                                                    <td><input type=button value=* class=btn onclick=opr(this)>
+                                                                                        <td><input type=button value=sqet class="btn btn2" onclick=sqrt2()>
+
+                                                                                            <tr>
+                                                                                                <td><input type=button value=MR class="btn btn2" onclick=mr()>
+                                                                                                    <td><input type=button value=1 class=btn onclick=digit(this)>
+                                                                                                        <td><input type=button value=2 class=btn onclick=digit(this)>
+                                                                                                            <td><input type=button value=3 class=btn onclick=digit(this)>
+                                                                                                                <td><input type=button value=- class=btn onclick=opr(this)>
+                                                                                                                    <td><input type=button value=1/x class="btn btn2" onclick=onebyx()>
+
+                                                                                                                        <tr>
+                                                                                                                            <td><input type=button value=MC class="btn btn2" onclick=mc()>
+                                                                                                                                <td><input type=button value=0 class=btn onclick=digit(this)>
+                                                                                                                                    <td><input type=button value=. class=btn onclick=digit(this)>
+                                                                                                                                        <td><input type=button value=+ class=btn onclick=opr(this)>
+                                                                                                                                            <td><input type=button value="=" class=btn onclick=eql(this)>
+                                                                                                                                                <td><input type=button value=+/- class=btn onclick=pm()>
+
+    </table>
+
+    <script>
+        var a, b, c, op, m;
+
+        function digit(n) {
+            t1.value += n.value
+                // t1.value= t1.value+ n.value
+        }
+
+        function opr(n) {
+            op = n.value
+            a = parseFloat(t1.value)
+            t1.value = ""
+        }
+
+        function eql() {
+            b = parseFloat(t1.value)
+            switch (op) {
+                case "+":
+                    c = a + b;
+                    break;
+                case "-":
+                    c = a - b;
+                    break;
+                case "*":
+                    c = a * b;
+                    break;
+                case "/":
+                    c = a / b;
+                    break;
+            }
+            t1.value = c
+        }
+
+        function sqrt2() {
+            a = parseFloat(t1.value)
+            t1.value = Math.sqrt(a)
+        }
+
+        function onebyx() {
+            x = parseFloat(t1.value)
+            t1.value = 1 / x
+        }
+
+        function pm() {
+            x = parseFloat(t1.value)
+            t1.value = x * -1
+        }
+
+        function per() {
+            b = parseFloat(t1.value)
+            if (op == "*")
+                t1.value = a * b / 100
+        }
+
+        function ms() {
+            m = parseFloat(t1.value)
+            s1.innerHTML = m
+        }
+
+        function mp() {
+            m += parseFloat(t1.value)
+            s1.innerHTML = m
+        }
+
+        function mr() {
+            t1.value = m
+            s1.innerHTML = m
+        }
+
+        function mc() {
+            m = 0
+            s1.innerHTML = ""
+        }
+
+        function bkspace() {
+            x = t1.value
+            t1.value = x.substring(0, x.length - 1)
+        }
+		function ce()
+		{
+		t1.value = ""
+		}
+		
+		function AllClear()
+		{
+			ce();
+			mc();
+		
+		}
+		
+    </script>
