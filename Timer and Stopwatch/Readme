@@ -1,0 +1,7 @@
+
+Description:
+
+This GitHub repository presents a Java application for creating a versatile timer and stopwatch with a user-friendly graphical user interface (GUI) using Swing and AWT (Abstract Window Toolkit). The application serves as a practical tool for time management, offering both countdown timer and stopwatch functionality
+
+How to Use:
+compile and run "MainClass.java" 
