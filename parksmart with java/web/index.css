@@ -1,0 +1,34 @@
+#logo {
+    margin: 14px 32px;
+    margin-bottom: 29px;
+}
+
+#logo img {
+    
+        height: 86px;
+        width: 56px;
+        margin: -39px -27px;
+}
+.carousel-item img{
+    height: 502px;
+}
+.container img{
+    width: 275px;
+    height: 178px;
+
+}
+/* <div class="container text-center">
+        <div class="row">
+          <div class="col-9">
+            Searching for a parking spot has become a daily habit for a lot of people all around the globe. It is usually a time consuming and frustrating process that a lot of citizens have to go through. 
+            <br>
+            This ParkSmart based on Slot booking is implemented, using the Android application. It is an efficient one for solving parking problems, which overcomes the traffic congestion also provides automated billing process.
+            <br><br>
+            Introducing ParkSmart,it is an android based application helps you find a place to park using live information from parking spaces around the city. ParkSmart app reads your smartphone GPS based location then directs you to your chosen parking space location. Using the slot allocation method we can book our own parking slot at any particular area/location. It is an efficient one for solving parking problems, which overcomes the traffic congestion also provides automated billing process.
+            <br>This solution alone initiates a chain-reaction of benefits, from lesser traffic congestion to reduced fuel efficiency, in urban areas where parking is often painstaking.
+            <br><br><br>
+          </div>
+          <div class="col-3">
+            <img src="image.jpeg">
+          </div>
+        </div> */

@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ParkSmart</title>
+    
+    <link rel="stylesheet" href="index.css">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><div id="logo">
+            <img src="1.png" alt="pic">
+        </div></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Book">Book Your Slot</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li> -->
+             
+              <li class="nav-item">
+                <a class="nav-link" href="#Live">Live!</a>
+              </li>
+              
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact Us</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img1.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Wellcome to ParkSmart</h5>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://en-media.thebetterindia.com/uploads/2017/08/smart-parking-bengaluru.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Wellcome to ParkSmar</h5>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.mokosmart.com/wp-content/uploads/2022/03/Smart-parking-system-using-IoT.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Wellcome to ParkSmar</h5>
+              
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br><br><br><br>
+      <a name="About"></a>
+      <center><p class="h2"><strong>About Us</strong></p></center>
+      <br><br><br>
+      <div class="container text">
+        <div class="row">
+          <div class="col-9">
+            Searching for a parking spot has become a daily habit for a lot of people all around the globe. It is usually a time consuming and frustrating process that a lot of citizens have to go through. 
+            <br>
+            This ParkSmart based on Slot booking is implemented, using the Android application. It is an efficient one for solving parking problems, which overcomes the traffic congestion also provides automated billing process.
+            <br><br>
+            Introducing ParkSmart,it is an android based application helps you find a place to park using live information from parking spaces around the city. ParkSmart app reads your smartphone GPS based location then directs you to your chosen parking space location. Using the slot allocation method we can book our own parking slot at any particular area/location. It is an efficient one for solving parking problems, which overcomes the traffic congestion also provides automated billing process.
+            <br>This solution alone initiates a chain-reaction of benefits, from lesser traffic congestion to reduced fuel efficiency, in urban areas where parking is often painstaking.
+            <br><br><br>
+          </div>
+          <div class="col-3">
+            <img src="Image.jpeg">
+          </div>
+        </div>
+        <br>
+        <br><br><br><br><br>
+      <a name="Book"></a>
+      <center><p class="h2"><strong>Pre Booking</strong></p></center>
+      <br><br>
+      <form class="row g-3 m-3" action="IndexDemo" method="post">
+        <div class="col-md-6">
+          <label for="firstname1" class="form-label" >First Name</label>
+          <input type="text" class="form-control" id="firstname1" name="firstName">
+        </div>
+        <div class="col-md-6">
+          <label for="lastname1" class="form-label" >Last Name</label>
+          <input type="text" class="form-control" id="lastname1" name="lastName">
+        </div>
+        <div class="col-12">
+          <label for="Email1" class="form-label" >Email</label>
+          <input type="email" class="form-control" id="Email1" placeholder="Email" name="email">
+        </div>
+        <div class="col-12">
+          <label for="location1" class="form-label" >Location</label>
+          <input type="text" class="form-control" id="location1" placeholder="Where to Go" name="location">
+        </div>
+        <div class="col-md-4">
+          <label for="number1" class="form-label" >Mobile No.</label>
+          <input type="number" class="form-control" id="number1" name="number">
+        </div>
+        <!-- <div class="col-md-4">
+          <label for="inputState" class="form-label">Time</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div> -->
+        <div class="col-md-2">
+          <label for="time1" class="form-label" >Slot Time</label>
+          <input type="time" class="form-control" id="time1" name="time">
+        </div>
+          <div class="col-md-2">
+          <label for="date1" class="form-label" >Date</label>
+          <input type="date" class="form-control" id="date1" name="date">
+        </div>
+        <div class="col-md-4">
+          <label for="vno" class="form-label" >Vehicle No.</label>
+          <input type="text" class="form-control" id="vno" name="vno">
+        </div>
+        
+        
+       <div class="d-grid gap-2 col-12">
+  <button class="btn btn-outline-success" type="Submit">Submit</button>
+
+</div>
+      </form>
+
+      <br>
+      <a name="Live"></a>
+      <center><p class="h2"><strong>Available Parking </strong></p></center>
+      <div class="pp ">
+          <b><label  class="form-label col-md-2" >Total Parking : 10 </label></b>
+              
+
+      </div>
+      <a name="Contact"></a>
+      <center><p class="h2"><strong>Contact Us</strong></p></center>
+      <br>
+      <div class="row justify-content-evenly pt-2 pb-5" style="background-color: #f1f1f1;">
+        <div class="col-md-5 mt-5">
+          <h3 class="mb-3">Contact Form</h3>
+  
+          <form action="ContactDemo">
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" name="name">
+              
+            <div class="mb-3">
+              <label for="Email1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" name="Email"> 
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="Textarea1" class="form-label">Message</label>
+              <textarea name="Textarea1" class="form-control" id="Textarea1" rows="3"></textarea>
+            </div>
+              
+            <button type="submit" class="btn btn-danger">Submit</button>
+          </form>
+        </div>
+        
+      </div>
+      <div class="col-md-5 mt-5">
+          <h3 class="mb-3">Address</h3>
+          <p>Bypass Road, Square, Manglaya Sadak, Indore, <br>Madhya Pradesh - 453771 <br><i class="bi bi-telephone"></i> : 958-965-6004</p>
+    
+    
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d773.1031152976287!2d75.94250923581484!3d22.820283960968776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39631cf455b4cec3%3A0x426141aa8141f7a5!2sAcropolis%20Institute%20Of%20Technology%20And%20Research%20-%20AITR!5e0!3m2!1sen!2sin!4v1665653729678!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
